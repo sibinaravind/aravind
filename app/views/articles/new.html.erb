@@ -1,0 +1,25 @@
+<h1>new article</h1>
+
+
+<form accept-charset="UTF-8" action="/articles/new" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓" /><input name="authenticity_token" type="hidden" value="lltuS9krcq8mW/Zm3j8f8SR7rTbkqdc7pWMfQZEUQtc=" /></div>
+            <p>
+                        <label for="article_title">Title</label><br>
+                        <input id="article_title" name="article[title]" type="text" />
+            </p>
+            <p>
+                        <label for="article_text">Text</label><br>
+                        <textarea id="article_text" name="article[text]"></textarea>
+            </p>
+            <p>
+                        <input name="commit" type="submit" value="Save Article" />
+            </p>
+            <p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @article.text %>
+</p>
+</form>
